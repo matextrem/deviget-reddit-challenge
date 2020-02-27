@@ -66,7 +66,7 @@ Clone this repository (`git clone git@github.com:matextrem/deviget-reddit-challe
 
 ## Live demo
 
-- Try this out by pressing [this link](https://reactjs.org/).
+- Try this out by pressing [this link](https://deviget-reddit-challenge.matiasdastugue.now.sh/).
 - Besides, you can check the work done [here](https://github.com/matextrem/deviget-reddit-challenge/commits/master). 
 
 ## Authors
