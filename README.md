@@ -4,13 +4,14 @@
   <img src="https://sm.ign.com/ign_es/screenshot/default/reddit-logo-full-1_75xh.png" width="400">
 </p>
 
-### Reddit top posts UI Test using React + Redux with [Create React App](https://github.com/facebook/create-react-app)..
+### Reddit top posts UI Test using React + Redux with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Table of Contents
 - [Deliverables](#deliverables)
 - [Setting up](#setting-up)
 - [Steps](#steps)
 - [Developed with](#developed-with)
+- [Live demo](#live-demo)
 - [Authors](#authors)
 
 ## Deliverables 
@@ -62,6 +63,11 @@ Clone this repository (`git clone git@github.com:matextrem/deviget-reddit-challe
 * [Jest](https://jestjs.io/) - JavaScript Testing Framework.
 * [Now](https://zeit.co/) - Tool for deploying websites in an easy way.
 * [Reddit API](http://www.reddit.com/dev/api) - Reddit API documentation.
+
+## Live demo
+
+- Try this out by pressing [this link](https://reactjs.org/).
+- Besides, you can check the work done [here](https://github.com/matextrem/deviget-reddit-challenge/commits/master). 
 
 ## Authors
 
