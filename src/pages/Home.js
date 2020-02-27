@@ -7,11 +7,8 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 //Components
 import PostsList from '../components/PostsList';
 
-
-
 //Actions
 import allActions from '../actions';
-
 
 //Utils
 import { loadState } from '../utils/storage';

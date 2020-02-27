@@ -1,8 +1,9 @@
-import posts from './posts';
-import { combineReducers } from 'redux';
+import axios from 'axios';
 
-const rootReducer = combineReducers({
-  posts,
+import { BASE_URI } from '../utils/constants';
+
+const api = axios.create({
+  baseURL: BASE_URI,
 });
 
-export default rootReducer;
+export { api };
