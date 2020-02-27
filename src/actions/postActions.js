@@ -1,3 +1,5 @@
+import { getPosts } from '../services/posts';
+
 import {
     SET_POSTS,
     DISMISS_POST,
@@ -14,7 +16,7 @@ import {
   const setPosts = params => {
     return {
       type: SET_POSTS,
-      payload: new Promise(),
+      payload: getPosts(params),
     };
   };
 
@@ -75,7 +77,7 @@ import {
   const restoreAll = params => {
     return {
       type: RESTORE_ALL,
-      payload: new Promise(),
+      payload: getPosts(params),
     };
   };
 
