@@ -53,7 +53,7 @@ const Gallery = () => {
           </Typography>
         </div>
       )}
-      {posts.length && (
+      {posts.length > 0 && (
         <div className={classes.root}>
           <GridList cellHeight={180} className={classes.gridList}>
             {posts.map(post => (
