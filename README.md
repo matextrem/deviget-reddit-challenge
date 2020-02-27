@@ -52,7 +52,7 @@ Clone this repository (`git clone git@github.com:matextrem/deviget-reddit-challe
  cd deviget-reddit-challenge
  npm install
  npm run build
- npm run start  //This will open a browser window on http://localhost:3000
+ npm run start  //This will open up a browser window on http://localhost:3000
  
  ```
 ## Developed with
