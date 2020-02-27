@@ -18,6 +18,7 @@ import allActions from '../../actions';
 import { POST_LIMIT } from '../../utils/constants';
 
 //Components
+import Post from '../Post';
 import PostItem from '../PostItem';
 
 
@@ -118,6 +119,11 @@ const PostsList = ({ mdBreakPoint, posts, loading, after, removedAll }) => {
         </Drawer>
       </div>
       <div className={!selected && mdBreakPoint ? classes.mdPost : ''}>
+      <Post
+          selected={selected}
+          handleSelect={() => setSelected(false)}
+          mdBreakPoint={mdBreakPoint}
+        />
       </div>
     </>
   );
