@@ -14,44 +14,44 @@ import allActions from '../actions';
 import { loadState } from '../utils/storage';
 
 const useStyles = makeStyles(theme => ({
-    root: {
-      display: 'flex',
-    },
-  }));
+  root: {
+    display: 'flex',
+  },
+}));
 
-  function Home() {
-    const classes = useStyles();
+function Home() {
+  const classes = useStyles();
 
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-    const mdBreakPoint = useMediaQuery('(max-width:768px)');
+  const mdBreakPoint = useMediaQuery('(max-width:768px)');
 
-    const posts = useSelector(state => state.posts.posts);
+  const posts = useSelector(state => state.posts.posts);
 
-    const loading = useSelector(state => state.posts.loading);
+  const loading = useSelector(state => state.posts.loading);
 
-    const after = useSelector(state => state.posts.after);
+  const after = useSelector(state => state.posts.after);
 
-    const removedAll = useSelector(state => state.posts.removedAll);
+  const removedAll = useSelector(state => state.posts.removedAll);
 
-    useEffect(() => {
-      const data = loadState();
-      if (!data) dispatch(allActions.postActions.setPosts());
-    }, [dispatch]);
+  useEffect(() => {
+    const data = loadState();
+    if (!data) dispatch(allActions.postActions.setPosts());
+  }, [dispatch]);
 
-    return (
-      <div className={classes.root}>
-        <CssBaseline />
+  return (
+    <div className={classes.root}>
+      <CssBaseline />
 
-        <PostsList
-          mdBreakPoint={mdBreakPoint}
-          posts={posts}
-          loading={loading}
-          after={after}
-          removedAll={removedAll}
-        />
-      </div>
-    );
-  }
+      <PostsList
+        mdBreakPoint={mdBreakPoint}
+        posts={posts}
+        loading={loading}
+        after={after}
+        removedAll={removedAll}
+      />
+    </div>
+  );
+}
 
-  export default Home;
+export default Home;

@@ -37,7 +37,9 @@ const Header = () => {
     <AppBar position="fixed" className={classes.appBar}>
       <Toolbar>
         <Typography variant="h6" noWrap>
-          <img src="images/reddit.png" alt="reddit" width="150" />
+          <Link to="/">
+            <img src="images/reddit.png" alt="reddit" width="150" />
+          </Link>
         </Typography>
         <Link className={classes.link} to={location => getRoute(location)}>
           <Button onClick={updateRoute} color="secondary">

@@ -23,10 +23,9 @@ const useStyles = makeStyles(theme => ({
     top: '6rem',
     margin: '0 auto',
   },
-  gridList: {
-  },
+  gridList: {},
   gridTile: {
-    width:'100% !important'
+    width: '100% !important',
   },
   link: {
     textDecoration: 'none',
@@ -57,7 +56,10 @@ const Gallery = () => {
         <div className={classes.root}>
           <GridList cellHeight={180} className={classes.gridList}>
             {posts.map(post => (
-              <GridListTile className={posts.length === 1 ? classes.gridTile : ''} key={post.id}>
+              <GridListTile
+                className={posts.length === 1 ? classes.gridTile : ''}
+                key={post.id}
+              >
                 <img src={post.preview} alt={post.title} />
                 <GridListTileBar
                   title={post.title}

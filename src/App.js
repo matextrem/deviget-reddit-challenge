@@ -20,17 +20,17 @@ function App() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-    <Router>
-      <div>
-        <Header />
-        <Switch>
-        <Route exact path="/" component={Home} />
+      <Router>
+        <div>
+          <Header />
+          <Switch>
+            <Route exact path="/" component={Home} />
             <Route exact path="/gallery" component={Gallery} />
             <Route path="*" component={NotFound} />
-        </Switch>
-      </div>
-    </Router>
-  </div>
+          </Switch>
+        </div>
+      </Router>
+    </div>
   );
 }
 
