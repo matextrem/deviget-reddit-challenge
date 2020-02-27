@@ -4,6 +4,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import { useSelector, useDispatch } from 'react-redux';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
+//Components
+import PostsList from '../components/PostsList';
+
+
 
 //Actions
 import allActions from '../actions';
@@ -42,13 +46,13 @@ const useStyles = makeStyles(theme => ({
       <div className={classes.root}>
         <CssBaseline />
 
-        {/*<PostsList
+        <PostsList
           mdBreakPoint={mdBreakPoint}
           posts={posts}
           loading={loading}
           after={after}
           removedAll={removedAll}
-        />*/}
+        />
       </div>
     );
   }
