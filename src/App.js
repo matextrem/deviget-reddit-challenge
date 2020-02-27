@@ -7,6 +7,8 @@ import Header from './components/Header';
 
 //Pages
 import Home from './pages/Home';
+import Gallery from './pages/Gallery';
+import NotFound from './pages/NotFound';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -22,7 +24,9 @@ function App() {
       <div>
         <Header />
         <Switch>
-          <Route exact path="/" component={Home} />
+        <Route exact path="/" component={Home} />
+            <Route exact path="/gallery" component={Gallery} />
+            <Route path="*" component={NotFound} />
         </Switch>
       </div>
     </Router>
